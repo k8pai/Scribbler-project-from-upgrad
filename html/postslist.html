@@ -3,29 +3,237 @@
 	<head>
 		<!-- TODO: Include Font Awesome file here -->
 		<!-- TODO: Include Google Fonts file here -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../styles/common.css" />
+		<script
+			src="https://kit.fontawesome.com/24b3f9c5d2.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 
 	<body>
 		<!-- TODO: Include code for header here -->
+		<header>
+			<div class="header-div">
+				<div class="heading">
+					<h1>Scribbler</h1>
+				</div>
+				<span></span>
+				<div class="heading-buttons">
+					<button
+						type="button"
+						class="btn btn-primary"
+						data-bs-toggle="modal"
+						data-bs-target="#signupModal"
+					>
+						sign up
+					</button>
+					<button
+						type="button"
+						class="btn btn-primary"
+						data-bs-toggle="modal"
+						data-bs-target="#signinModal"
+					>
+						sign in
+					</button>
+				</div>
+			</div>
+			<div class="heading-description">
+				<h4>explore, imagine, create</h4>
+			</div>
+		</header>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="signupModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">
+							Get Started
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<label
+								for="formGroupExampleInput"
+								class="form-label"
+								>Name</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								id="formGroupExampleInput"
+								placeholder="Enter your name"
+							/>
+						</div>
+						<div class="mb-3">
+							<label
+								for="formGroupExampleInput2"
+								class="form-label"
+								>Username</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								id="formGroupExampleInput2"
+								placeholder="Enter your username"
+							/>
+						</div>
+						<div class="mb-3">
+							<label
+								for="formGroupExampleInput"
+								class="form-label"
+								>Password</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								id="formGroupExampleInput"
+								placeholder="Enter your password"
+							/>
+						</div>
+						<div class="mb-3">
+							<label
+								for="formGroupExampleInput2"
+								class="form-label"
+								>Confirm Password</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								id="formGroupExampleInput2"
+								placeholder="Re-enter your password"
+							/>
+						</div>
+						<div class="mb-3">
+							<button
+								type="button"
+								class="btn btn-success form-control"
+							>
+								Sign Up
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="signinModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">
+							Welcome Back!
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<label
+								for="formGroupExampleInput"
+								class="form-label"
+								>Username</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								id="formGroupExampleInput"
+								placeholder="Enter your username"
+							/>
+						</div>
+						<div class="mb-3">
+							<label
+								for="formGroupExampleInput2"
+								class="form-label"
+								>Password</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								id="formGroupExampleInput2"
+								placeholder="Enter your password"
+							/>
+						</div>
+						<div class="mb-3">
+							<button
+								type="button"
+								class="btn btn-success form-control"
+							>
+								Sign In
+							</button>
+						</div>
+
+						<div class="my-3 p-2 position-relative">
+							<div
+								class="position-absolute top-50 start-50 translate-middle"
+							>
+								<strong>Not a member?</strong>
+								<button
+									type="button"
+									class="btn btn-link align-middle"
+									data-bs-toggle="modal"
+									data-bs-target="#signupModal"
+								>
+									sign up
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
 		<!-- list of all posts starts here -->
 		<div>
 			<!-- post 1 starts here -->
-			<div>
+			<div class="post">
 				<div>
 					<p>Srishti Gupta</p>
 				</div>
 
-				<div>
-					<div>
-						<p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+				<div class="post-info">
+					<div class="post-heading-div">
+						<p>
+							&apos;let&apos; me be a &apos;const&apos;(ant), not
+							a &apos;var&apos;(iable)!
+						</p>
 						<span>
 							<!-- TODO: Include Font Awesome icon for delete icon here -->
+							<i class="fa-solid fa-trash"></i>
 						</span>
 					</div>
-					<p>
+					<p class="post-description">
 						Since JavaScript does not have any type-checking, either
 						of these keywords can be used to declare a variable of
 						any type (datatype) in JavaScript. Though all the three
@@ -34,6 +242,7 @@
 					</p>
 					<span>
 						<!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+						<i class="fa-solid fa-ellipsis"></i>
 					</span>
 				</div>
 			</div>
@@ -50,16 +259,18 @@
 						<p>What is linting and how can it save you time?</p>
 						<span>
 							<!-- TODO: Include Font Awesome icon for delete icon here -->
+							<i class="fa-solid fa-trash"></i>
 						</span>
 					</div>
 					<p>
 						One of the biggest challenges in software development is
-						time. It’s something we can’t easily get more of, but
-						linting can help us make the most out of the time we
-						have.
+						time. It&apos;s something we can&apos;t easily get more
+						of, but linting can help us make the most out of the
+						time we have.
 					</p>
 					<span>
 						<!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+						<i class="fa-solid fa-ellipsis"></i>
 					</span>
 				</div>
 			</div>
@@ -76,17 +287,19 @@
 						<p>How to Get More Views on Your Tech Blog</p>
 						<span>
 							<!-- TODO: Include Font Awesome icon for delete icon here -->
+							<i class="fa-solid fa-trash"></i>
 						</span>
 					</div>
 					<p>
-						If you're a developer with a Twitter account, you've
-						already seen everyone and their cat start a blog,
-						YouTube channel, or Patreon. We all want to become
+						If you&apos;re a developer with a Twitter account,
+						you&apos;ve already seen everyone and their cat start a
+						blog, YouTube channel, or Patreon. We all want to become
 						stars, or at the very least, a recognizable name in the
 						industry.
 					</p>
 					<span>
 						<!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+						<i class="fa-solid fa-ellipsis"></i>
 					</span>
 				</div>
 			</div>
@@ -103,6 +316,7 @@
 						<p>How to write easily describable code</p>
 						<span>
 							<!-- TODO: Include Font Awesome icon for delete icon here -->
+							<i class="fa-solid fa-trash"></i>
 						</span>
 					</div>
 					<p>
@@ -115,6 +329,7 @@
 					</p>
 					<span>
 						<!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+						<i class="fa-solid fa-ellipsis"></i>
 					</span>
 				</div>
 			</div>
@@ -129,22 +344,24 @@
 				<div>
 					<div>
 						<p>
-							Everything you should know about ‘module’ &
-							‘require’ in Node.js
+							Everything you should know about &apos;module&apos;
+							& &apos;require&apos; in Node.js
 						</p>
 						<span>
 							<!-- TODO: Include Font Awesome icon for delete icon here -->
+							<i class="fa-solid fa-trash"></i>
 						</span>
 					</div>
 					<p>
 						Node.js treats each JavaScript file as a separate
 						module. For instance, if you have a file containing some
 						code and this file is named xyz.js, then this file is
-						treated as a module in Node, and you can say that you’ve
-						created a module named xyz.
+						treated as a module in Node, and you can say that
+						you&apos;ve created a module named xyz.
 					</p>
 					<span>
 						<!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+						<i class="fa-solid fa-ellipsis"></i>
 					</span>
 				</div>
 			</div>

@@ -1,0 +1,56 @@
+.container-div {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: url(/images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.header-div {
+	display: flex;
+	align-items: center;
+}
+
+.header-div span {
+	flex-grow: 1;
+}
+
+.heading {
+	font-size: larger;
+}
+
+.heading h1 {
+	margin: 0;
+}
+
+.heading-buttons {
+	display: flex;
+	align-items: center;
+}
+
+.heading-buttons button {
+	padding: 7px 12px;
+	background-color: rgb(15, 102, 202);
+	color: white;
+	margin: 0px 5px;
+}
+
+.heading-description h4 {
+	margin: 0;
+}
+
+.main {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container button {
+	padding: 7px 12px;
+	background-color: rgb(194, 207, 56);
+	margin: 0px 5px;
+}
