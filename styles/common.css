@@ -22,11 +22,11 @@ header {
 
 .heading {
 	font-size: larger;
-	color: blue;
-	font-family: 'Montez', cursive;
 }
 
 .heading h1 {
+	color: blue;
+	font-family: 'Montez', cursive;
 	margin: 0;
 }
 
