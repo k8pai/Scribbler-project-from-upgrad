@@ -20,6 +20,10 @@
 		/>
 		<link rel="stylesheet" href="../styles/common.css" />
 		<link rel="stylesheet" href="../styles/post.css" />
+		<script
+			src="https://kit.fontawesome.com/24b3f9c5d2.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
 		<header>
@@ -48,7 +52,7 @@
 				</div>
 			</div>
 			<div class="heading-description">
-				<h5>explore, imagine, create</h5>
+				<h5>Explore, Imagine, Create</h5>
 			</div>
 		</header>
 
@@ -75,57 +79,47 @@
 					</div>
 					<div class="modal-body">
 						<div class="mb-3">
-							<label
-								for="formGroupExampleInput"
-								class="form-label"
-								>Name</label
-							>
+							<label for="name" class="form-label">Name</label>
 							<input
 								type="text"
 								class="form-control"
-								id="formGroupExampleInput"
+								id="name"
 								placeholder="Enter your name"
 								required
 							/>
 						</div>
 						<div class="mb-3">
-							<label
-								for="formGroupExampleInput2"
-								class="form-label"
+							<label for="username" class="form-label"
 								>Username</label
 							>
 							<input
 								type="text"
 								class="form-control"
-								id="formGroupExampleInput2"
+								id="username"
 								placeholder="Enter your username"
 								required
 							/>
 						</div>
 						<div class="mb-3">
-							<label
-								for="formGroupExampleInput"
-								class="form-label"
+							<label for="password" class="form-label"
 								>Password</label
 							>
 							<input
 								type="password"
 								class="form-control"
-								id="formGroupExampleInput"
+								id="password"
 								placeholder="Enter your password"
 								required
 							/>
 						</div>
 						<div class="mb-3">
-							<label
-								for="formGroupExampleInput2"
-								class="form-label"
+							<label for="confirm-password" class="form-label"
 								>Confirm Password</label
 							>
 							<input
 								type="password"
 								class="form-control"
-								id="formGroupExampleInput2"
+								id="confirm-password"
 								placeholder="Re-enter your password"
 								required
 							/>
@@ -166,29 +160,25 @@
 					</div>
 					<div class="modal-body">
 						<div class="mb-3">
-							<label
-								for="formGroupExampleInput"
-								class="form-label"
+							<label for="signInUsername" class="form-label"
 								>Username</label
 							>
 							<input
 								type="text"
 								class="form-control"
-								id="formGroupExampleInput"
+								id="signInUsername"
 								placeholder="Enter your username"
 								required
 							/>
 						</div>
 						<div class="mb-3">
-							<label
-								for="formGroupExampleInput2"
-								class="form-label"
+							<label for="signInPassword" class="form-label"
 								>Password</label
 							>
 							<input
 								type="password"
 								class="form-control"
-								id="formGroupExampleInput2"
+								id="signInPassword"
 								placeholder="Enter your password"
 								required
 							/>
@@ -223,16 +213,49 @@
 		</div>
 
 		<section>
-			<div class="heading">
-				<strong id="name"></strong>
+			<div class="title-div" id="title"></div>
+			<div class="name-div">
+				<p id="author-name"></p>
+
+				<button type="button" id="edit-button" class="btn btn-danger">
+					Edit <i class="fa-solid fa-pen-to-square"></i>
+				</button>
 			</div>
-			<div class="title">
-				<p id="title"></p>
-			</div>
-			<div id="content-container">
-				<!-- <p id="name"></p> -->
-				<!-- <p id="title"></p> -->
+			<div class="description">
 				<p id="description"></p>
+			</div>
+			<div class="contents" id="contents">
+				<div class="like-section mb-3">
+					<button
+						type="button"
+						id="like-button"
+						class="btn btn-danger mb-3"
+					>
+						<i class="fa-solid fa-thumbs-up"></i> Like
+					</button>
+					<p id="like-counter">Be the first one to like this!</p>
+				</div>
+				<div class="comment-section">
+					<div class="mb-3">
+						<textarea
+							class="form-control mb-3"
+							id="comment-area"
+							rows="3"
+							placeholder="Leave a comment..."
+						></textarea>
+						<button
+							type="button"
+							id="comment-button"
+							class="btn btn-danger"
+						>
+							Comment
+						</button>
+					</div>
+					<div class="mb-3">
+						<strong>All comments</strong>
+						<ul class="list-group" id="all-comments"></ul>
+					</div>
+				</div>
 			</div>
 		</section>
 

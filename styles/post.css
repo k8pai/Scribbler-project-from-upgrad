@@ -1,7 +1,37 @@
-.heading {
-	text-align: center;
+section {
+	margin: 20px;
+	padding: 20px;
 }
 
-.title p {
-	white-space: normal;
+.title-div {
+	text-align: center;
+	font-weight: bolder;
+	margin-bottom: 20px;
+	font-size: x-large;
+}
+
+.name-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.name-div p {
+	font-size: larger;
+	margin: 0;
+}
+
+.contents {
+	width: 60%;
+}
+
+#all-comments {
+	background-color: lightgray;
+}
+
+#all-comments li {
+	list-style: none;
+	padding: 5px;
+	margin: 5px;
 }
