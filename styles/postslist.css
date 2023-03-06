@@ -1,0 +1,121 @@
+body {
+	background-color: #ffeedd;
+}
+.post-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding-top: 50px;
+}
+
+.post-container:nth-last-child(1) {
+	justify-content: center;
+}
+
+.post {
+	width: 40%;
+	display: flex;
+	background-color: white;
+	border-radius: 15px;
+	overflow: hidden;
+	/* Regular shadow */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.post:hover {
+	/* Extra large shadow on hover */
+	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+.post-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.post-name p {
+	padding: 20px;
+	margin: 0;
+	font-size: large;
+	font-weight: bold;
+	color: darkgray;
+}
+
+.post-info {
+	padding: 20px;
+	background-color: #f0f0f0;
+}
+
+.post-info span {
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px 0px;
+	margin: 0px 10px;
+}
+
+.post-info span:hover {
+	cursor: pointer;
+}
+
+.post-heading-div {
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.post-heading-div p {
+	margin: auto 0;
+	font-size: large;
+	font-weight: bold;
+	color: darkgray;
+}
+
+.post-heading-div span {
+	padding: 5px 0px;
+	margin: 0px 10px;
+}
+
+.post-description {
+	padding: 0;
+	margin: 0;
+}
+
+/* Modal buttons */
+.modal-buttons {
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Yes button */
+#confirm-yes-btn {
+	background-color: green;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+#confirm-yes-btn:hover {
+	background-color: darkgreen;
+}
+
+/* No button */
+#confirm-no-btn {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#confirm-no-btn:hover {
+	background-color: darkred;
+}
